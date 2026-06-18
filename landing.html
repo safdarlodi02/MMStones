@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM STONES CORPORATION | Premium Natural Stone Exporter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23c4a96a'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='12' fill='%231a1714'%3EMM%3C/text%3E%3C/svg%3E">
+
+    <style>
+        :root {
+            /* Client's Original Premium Color Scheme Alignment */
+            --color-dark-bg: #1a1714;
+            /* Deep espresso charcoal */
+            --color-dark-surface: #2a2520;
+            /* Lighter warm stone brown */
+            --color-light-bg: #f5f1eb;
+            /* Warm limestone cream */
+            --color-light-surface: #ffffff;
+            /* Crisp white for cards */
+
+            /* Typography & Accent Tokens */
+            --color-accent: #c4a96a;
+            /* Premium sand gold */
+            --color-text-dark-primary: #e8dfc8;
+            /* Off-white gold text */
+            --color-text-dark-muted: #a09880;
+            /* Muted khaki text */
+            --color-text-light-primary: #1a1714;
+            /* Deep dark contrast text */
+            --color-text-light-muted: #5a5040;
+            /* Muted earthy gray-brown */
+
+            /* Typography & Adaptive Shapes */
+            --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            --shape-corner-small: 4px;
+            --shape-corner-medium: 8px;
+            --shape-corner-large: 16px;
+            --shape-corner-full: 999px;
+
+            /* Elegant Subtle Elevation Shadow */
+            --elevation-1: 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-light-bg);
+            color: var(--color-text-light-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Responsive Global Layout Sections */
+        .section-container {
+            position: relative;
+            padding: 80px 24px;
+            width: 100%;
+        }
+
+        .section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Top Adaptive Navigation Bar */
+        .nav-bar {
+            background-color: rgba(26, 23, 20, 0.95);
+            backdrop-filter: blur(12px);
+            padding: 0 24px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(196, 169, 106, 0.2);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .nav-logo-block {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-logo-badge {
+            background-color: var(--color-accent);
+            color: var(--color-dark-bg);
+            font-weight: 700;
+            font-size: 14px;
+            padding: 6px 10px;
+            border-radius: var(--shape-corner-small);
+            letter-spacing: 0.05em;
+        }
+
+        .nav-logo-text {
+            color: var(--color-text-dark-primary);
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-link {
+            color: var(--color-text-dark-muted);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--color-accent);
+        }
+
+        .nav-cta {
+            background-color: var(--color-accent);
+            color: var(--color-dark-bg);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: var(--shape-corner-full);
+            text-decoration: none;
+            white-space: nowrap;
+            flex-shrink: 0;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        .nav-cta:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        /* Fluid Landing Hero Section */
+        .hero {
+            background-color: var(--color-dark-bg);
+            padding: 100px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-texture {
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(135deg, transparent 0px, transparent 2px, rgba(255, 255, 255, 0.01) 2px, rgba(255, 255, 255, 0.01) 4px);
+        }
+
+        .hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 640px;
+        }
+
+        /* New Hero Credential Pill */
+        .hero-credential {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--color-dark-bg);
+            background: var(--color-accent);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: 999px;
+            margin-bottom: 14px;
+        }
+
+        .hero-credential-icon {
+            font-size: 14px;
+        }
+
+        .hero-eyebrow {
+            color: var(--color-accent);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .hero-h1 {
+            color: var(--color-text-dark-primary);
+            font-size: 44px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            margin-bottom: 24px;
+        }
+
+        .hero-sub {
+            color: var(--color-text-dark-muted);
+            font-size: 15px;
+            line-height: 1.65;
+        }
+
+        .hero-sub-2 {
+            color: var(--color-text-dark-muted);
+            font-size: 15px;
+            line-height: 1.65;
+            margin-bottom: 36px;
+        }
+
+        .hero-btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* Dark Mode Hero Button Alternatives */
+        .btn-filled {
+            background-color: var(--color-accent);
+            color: var(--color-dark-bg);
+            font-size: 14px;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: var(--shape-corner-full);
+            cursor: pointer;
+            border: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn-filled:hover {
+            opacity: 0.9;
+        }
+
+        .btn-outlined {
+            background: transparent;
+            border: 1px solid var(--color-text-dark-muted);
+            color: var(--color-text-dark-primary);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 12px 24px;
+            border-radius: var(--shape-corner-full);
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .btn-outlined:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: var(--color-text-dark-primary);
+        }
+
+        .hero-badge-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 16px;
+        }
+
+        .hero-badge {
+            background-color: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(196, 169, 106, 0.3);
+            border-radius: var(--shape-corner-medium);
+            padding: 24px 32px;
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .hero-badge.highlight {
+            border-color: var(--color-accent);
+            background-color: rgba(196, 169, 106, 0.05);
+            padding: 20px 32px;
+        }
+
+        .hero-badge-line {
+            color: var(--color-text-dark-muted);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .hero-badge-accent-line {
+            color: var(--color-accent);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .hero-badge-val {
+            color: var(--color-text-dark-primary);
+            font-size: 28px;
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        .hero-code-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--color-text-dark-primary);
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 8px;
+        }
+
+        .hero-code-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .code-label {
+            color: var(--color-text-dark-muted);
+            font-size: 12px;
+        }
+
+        /* Trust Ribbon Bar (Warm Light Limestone Panel) */
+        .trust-bar {
+            background-color: var(--color-light-bg);
+            border-bottom: 1px solid rgba(26, 23, 20, 0.08);
+            padding: 24px;
+        }
+
+        .trust-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .trust-icon {
+            width: 12px;
+            height: 12px;
+            background-color: #dfdacb;
+            border-radius: var(--shape-corner-full);
+            flex-shrink: 0;
+        }
+
+        .trust-text {
+            font-size: 13px;
+            color: var(--color-text-light-muted);
+            font-weight: 500;
+        }
+
+        /* Section Headings */
+        .section-eyebrow {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 8px;
+        }
+
+        .section-h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--color-text-light-primary);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .section-desc {
+            font-size: 15px;
+            color: var(--color-text-light-muted);
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 640px;
+        }
+
+        /* Products Grid Layout */
+        .stone-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .stone-card {
+            background-color: var(--color-light-surface);
+            border-radius: var(--shape-corner-medium);
+            overflow: hidden;
+            border: 1px solid rgba(26, 23, 20, 0.08);
+            box-shadow: var(--elevation-1);
+            transition: transform 0.2s ease;
+        }
+
+        .stone-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .stone-img-wrapper {
+            height: 220px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background-color: #ede9e2;
+            display: flex;
+        }
+
+        .stone-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .stone-tag {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            z-index: 1;
+            background-color: rgba(26, 23, 20, 0.85);
+            color: var(--color-text-dark-primary);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: var(--shape-corner-small);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .stone-info {
+            padding: 24px;
+        }
+
+        .stone-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-text-light-primary);
+            margin-bottom: 6px;
+        }
+
+        .stone-detail {
+            font-size: 13px;
+            color: var(--color-text-light-muted);
+            line-height: 1.5;
+        }
+
+        .stone-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--color-text-light-primary);
+            margin-top: 16px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* Why Us Layout Updates */
+        .why-header-split {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 56px;
+            align-items: center;
+            margin-bottom: 48px;
+        }
+
+        .why-header-split .section-desc {
+            margin-bottom: 0;
+            max-width: 100%;
+        }
+
+        .why-image-block {
+            background-color: rgba(26, 23, 20, 0.04);
+            border-radius: var(--shape-corner-medium);
+            height: 380px;
+            width: 100%;
+            border: 1px solid rgba(26, 23, 20, 0.08);
+            overflow: hidden;
+            box-shadow: var(--elevation-1);
+        }
+
+        .why-img-src {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .why-item {
+            background-color: var(--color-light-surface);
+            border: 1px solid rgba(26, 23, 20, 0.08);
+            border-radius: var(--shape-corner-medium);
+            padding: 28px;
+            box-shadow: var(--elevation-1);
+        }
+
+        .why-icon {
+            font-size: 24px;
+            color: var(--color-text-light-primary);
+            margin-bottom: 12px;
+        }
+
+        .why-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--color-text-light-primary);
+            margin-bottom: 6px;
+        }
+
+        .why-text {
+            font-size: 13px;
+            color: var(--color-text-light-muted);
+            line-height: 1.5;
+        }
+
+        /* Quarry Section - Custom Dark Block Style */
+        .quarry-section {
+            background-color: var(--color-dark-bg);
+        }
+
+        .quarry-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .quarry-eyebrow {
+            color: var(--color-accent);
+        }
+
+        .quarry-h2 {
+            color: var(--color-text-dark-primary);
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+
+        .quarry-text {
+            color: var(--color-text-dark-muted);
+            font-size: 14px;
+            line-height: 1.65;
+            margin-bottom: 32px;
+        }
+
+        .quarry-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .quarry-stat-num {
+            color: var(--color-accent);
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .quarry-stat-label {
+            color: var(--color-text-dark-muted);
+            font-size: 12px;
+        }
+
+        .quarry-img {
+            background-color: rgba(255, 255, 255, 0.02);
+            border-radius: var(--shape-corner-medium);
+            height: 340px;
+            width: 100%;
+            border: 1px solid rgba(196, 169, 106, 0.15);
+            overflow: hidden;
+            display: flex;
+        }
+
+        .quarry-img-src {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Live Inventory Section */
+        .inventory-section {
+            background-color: var(--color-light-bg);
+            border-top: 1px solid rgba(26, 23, 20, 0.08);
+            border-bottom: 1px solid rgba(26, 23, 20, 0.08);
+        }
+
+        .inv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 32px;
+        }
+
+        .inv-card {
+            background-color: var(--color-light-surface);
+            border: 1px solid rgba(26, 23, 20, 0.08);
+            border-radius: var(--shape-corner-medium);
+            overflow: hidden;
+            box-shadow: var(--elevation-1);
+        }
+
+        .inv-img-wrapper {
+            background-color: #e2ded6;
+            height: 240px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .inv-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .inv-body {
+            padding: 16px;
+        }
+
+        .inv-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-text-light-primary);
+        }
+
+        .inv-spec {
+            font-size: 12px;
+            color: var(--color-text-light-muted);
+            margin-top: 4px;
+        }
+
+        .inv-badge {
+            display: inline-block;
+            background-color: #e2ebd5;
+            color: #3b601a;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: var(--shape-corner-small);
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 64px;
+            margin-top: 32px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--color-text-light-primary);
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            background-color: var(--color-light-surface);
+            border: 1px solid rgba(26, 23, 20, 0.15);
+            border-radius: var(--shape-corner-small);
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--color-text-light-primary);
+            font-family: var(--font-sans);
+            transition: border-color 0.2s ease;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-text-light-primary);
+        }
+
+        .form-textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .form-submit {
+            align-self: flex-start;
+            background-color: var(--color-text-light-primary);
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 12px 28px;
+            border-radius: var(--shape-corner-full);
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .form-submit:hover {
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .contact-block {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            /* Keeps the pin icon snapped beautifully to the first line */
+        }
+
+        .contact-icon {
+            width: 44px;
+            height: 44px;
+            background-color: rgba(26, 23, 20, 0.04);
+            border-radius: var(--shape-corner-medium);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-light-primary);
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .contact-label {
+            font-size: 11px;
+            color: var(--color-text-light-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .contact-val-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-val {
+            font-size: 14px;
+            color: var(--color-text-light-primary);
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        /* Subtle, light separator line to distinctly split the two addresses */
+        .contact-address-divider {
+            height: 1px;
+            background-color: rgba(26, 23, 20, 0.08);
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .wa-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #25D366;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: var(--shape-corner-full);
+            text-decoration: none;
+        }
+
+        /* Footer Architecture */
+        .footer {
+            background-color: var(--color-dark-bg);
+            color: var(--color-text-dark-muted);
+            padding: 48px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-logo {
+            color: var(--color-text-dark-primary);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .footer-link {
+            color: var(--color-text-dark-muted);
+            font-size: 13px;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--color-text-dark-primary);
+        }
+
+        .footer-copy {
+            color: rgba(160, 152, 128, 0.4);
+            font-size: 12px;
+            width: 100%;
+            margin-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 24px;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: rgba(26, 23, 20, 0.08);
+        }
+
+        /* Mobile Responsiveness Framework */
+        @media (max-width: 992px) {
+
+            .hero-inner,
+            .why-header-split {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-badge-panel {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-h1 {
+                font-size: 34px;
+            }
+
+            .quarry-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .section-container {
+                padding: 60px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-bar {
+                padding: 0 16px;
+            }
+
+            .nav-logo-text {
+                font-size: 14px;
+            }
+
+            .nav-cta {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-filled,
+            .btn-outlined {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero-badge {
+                max-width: 100%;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <div class="nav-inner">
+            <div class="nav-logo-block">
+                <div class="nav-logo-badge">MM</div>
+                <div class="nav-logo-text">MM Stones Corporation</div>
+            </div>
+            <div class="nav-links">
+                <a class="nav-link" href="#products">Products</a>
+                <a class="nav-link" href="#why-us">Advantages</a>
+                <a class="nav-link" href="#quarry">Our Quarry</a>
+                <a class="nav-link" href="#inventory">Availability</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+            <a class="nav-cta" href="#contact">Get Quarry-Direct FOB Pricing</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-texture"></div>
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-credential">
+                    <i class="ti ti-rosette-discount-check-filled hero-credential-icon" aria-hidden="true"></i>
+                    ✧ Founded by a qualified geologist
+                </div>
+                <span class="hero-eyebrow">Quarry Owners India</span>
+                <h1 class="hero-h1">Premium Natural Stones <br>Source Directly from Quarries <br>MM Stones Corporation
+                </h1>
+                <p class="hero-sub">Quartzite, Marble & KOTA Stone from Raw Blocks to finished Slabs</p>
+                <p class="hero-sub-2">No Agents | No Middlemen | Geologist Founder</p>
+                <div class="hero-btns">
+                    <button class="btn-filled" onclick="location.href='#products'">Explore Our Stones</button>
+                    <button class="btn-outlined" onclick="location.href='#contact'">Visit Our QUARRIES</button>
+                </div>
+            </div>
+
+            <div class="hero-badge-panel">
+                <div class="hero-badge highlight">
+                    <div class="hero-badge-accent-line">Verified Exporter Credentials</div>
+                    <div class="hero-code-row">
+                        <span class="code-label">GST No.</span>
+                        <span>23ACDFM7867L12P</span>
+                    </div>
+                    <div class="hero-code-row">
+                        <span class="code-label">Export Code</span>
+                        <span>ACDFM7867L</span>
+                    </div>
+                </div>
+
+                <div class="hero-badge">
+                    <div class="hero-badge-line">Supplying</div>
+                    <div class="hero-badge-val">12+ Countries</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="trust-bar" aria-label="Core Capabilities">
+        <div class="trust-inner">
+            <div class="trust-item">
+                <div class="trust-icon"></div>
+                <span class="trust-text">Quarry-Direct Owner</span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"></div>
+                <span class="trust-text">Petrographic Certified</span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"></div>
+                <span class="trust-text">FOB & CIF Pricing Available</span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"></div>
+                <span class="trust-text">USA · China · Europe · Dubai </span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"></div>
+                <span class="trust-text">Individual Slab Photos</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section-container">
+        <div class="section-inner">
+            <div class="section-eyebrow">Our Stones</div>
+            <h2 class="section-h2">Quartzite, Marble & KOTA Stone from Raw Blocks to finished Slabs</h2>
+            <p class="section-desc">Every slab individually photographed and measured. Available in polished, honed, and
+                leathered finishes.
+                2 CM and 3 CM thickness. We cut to order, send us your dimensions and we'll produce to your exact
+                specification at our facility.</p>
+
+            <div class="stone-grid">
+                <div class="stone-card">
+                    <div class="stone-img-wrapper">
+                        <img class="stone-img" src="https://i.ibb.co/8LrQJSXf/Taj-Mahal-Quartzite-MM-Stones.png"
+                            alt="Quartzite-MM-Stones">
+                        <div class="stone-tag">Quartzite</div>
+                    </div>
+                    <div class="stone-info">
+                        <div class="stone-name">Quartzite Slabs & Blocks</div>
+                        <div class="stone-detail">Mohs 7+ hardness · Etch resistant · Scratch resistant · Kitchen
+                            countertop grade · Custom sizes & thickness available</div>
+                        <a href="#contact" class="stone-link">View collection <i class="ti ti-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="stone-card">
+                    <div class="stone-img-wrapper">
+                        <img class="stone-img" src="https://i.ibb.co/LdKLf4h7/2-Marble-Slabs-Blocks-Calacatta-Gold.png"
+                            alt="Marble-MM-Stones">
+                        <div class="stone-tag">Marble</div>
+                    </div>
+                    <div class="stone-info">
+                        <div class="stone-name">Marble Slabs & Blocks</div>
+                        <div class="stone-detail">Book-Matched Pairs available · Madhya Pradesh, Rajasthan & Imported
+                            Origin · Rare veining · Custom sizes & thickness available</div>
+                        <a href="#contact" class="stone-link">View collection <i class="ti ti-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="stone-card">
+                    <div class="stone-img-wrapper">
+                        <img class="stone-img" src="https://i.ibb.co/4gf8kWrz/3-Kota-Stone-Website-Listing.jpg"
+                            alt="Kota-Stone-MM-Stones">
+                        <div class="stone-tag">KOTA Stone</div>
+                    </div>
+                    <div class="stone-info">
+                        <div class="stone-name">KOTA Stone</div>
+                        <div class="stone-detail">Kota Stone — India's iconic blue-grey limestone, quarried exclusively
+                            in Rajasthan, built for high-traffic commercial flooring worldwide · Low-tier pricing</div>
+                        <a href="#contact" class="stone-link">View collection <i class="ti ti-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="why-us" class="section-container">
+        <div class="section-inner">
+
+            <div class="why-header-split">
+                <div>
+                    <div class="section-eyebrow">Why source from us</div>
+                    <h2 class="section-h2">The Quarry Owner Difference</h2>
+                    <p class="section-desc">MM Stones Corporation is founded and owned by Safdar, a Qualified Geologist
+                        with deep expertise in the mineral belts of Rajasthan and Madhya Pradesh, and by managing the
+                        entire supply chain directly from quarry extraction through processing to terminal container
+                        dispatch, we remove every unnecessary layer between you and the source. Most Indian stone
+                        exporters are trading companies: they buy from quarries, add their margin, and pass the order
+                        on, with two or three intermediaries touching your shipment before it reaches you. When you
+                        contact MM Stones, you are speaking directly to the person who can read a rock face, identify
+                        mineral composition by eye, decide what gets cut, approve every lot, and certify every shipment
+                        — with no sales team and no trading layer in between. That means faster decisions, honest
+                        answers on availability, custom specifications cut to your exact requirement, and certifications
+                        you can trust because they come from a geologist's judgment, not a trader's word. "Direct from
+                        quarry" is not a marketing phrase at MM Stones, it is a literal description of how every order
+                        is fulfilled.</p>
+                </div>
+
+                <div class="why-image-block">
+                    <img class="why-img-src" src="https://i.ibb.co/8gwfrR0g/4-Raw-Quarry-Face-Founder.jpg"
+                        alt="Quarry-Owner">
+                </div>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+                    <div class="why-title">Direct from quarry</div>
+                    <div class="why-text">No agents, no brokers. You deal directly with the owner. Full traceability
+                        from block extraction to container loading.</div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="ti ti-currency-dollar" aria-hidden="true"></i></div>
+                    <div class="why-title">Competitive FOB pricing</div>
+                    <div class="why-text">Eliminating the middleman means better margins for you. FOB and CIF pricing
+                        available for all markets.</div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="ti ti-photo" aria-hidden="true"></i></div>
+                    <div class="why-title">Every slab photographed</div>
+                    <div class="why-text">Full-slab images with exact dimensions before you commit. Book-matched pairs
+                        available on request.</div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="ti ti-file-certificate" aria-hidden="true"></i></div>
+                    <div class="why-title">Certified & transparent</div>
+                    <div class="why-text">Petrographic documentation for all stone types. Accurate labelling. Always
+                        available on phone call, whatsapp, emails & physical in person meeting.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quarry" class="section-container quarry-section">
+        <div class="section-inner quarry-grid">
+            <div>
+                <div class="quarry-eyebrow">Our Quarries: Madhya Pradesh & Rajasthan, India</div>
+                <h2 class="quarry-h2">Directly from the earth</h2>
+                <p class="quarry-text">MM Stones Corporation is founded and led by Safdar, a Qualified Geologist with
+                    deep expertise in mineral formation across Rajasthan and Madhya Pradesh. When you source from us,
+                    you are not speaking to a trader who buys and resells, you are speaking directly to someone who can
+                    read a rock face, identify mineral composition by eye, and tell you exactly what a slab is made of
+                    before any lab test confirms it. That knowledge flows into every block we select, every lot we
+                    approve, and every shipment we certify. That same eye extends beyond our own quarries too, we
+                    regularly source exceptional premium blocks from quarries across India and abroad, each one
+                    personally inspected and approved before it enters our yard.</p>
+                <div class="quarry-stats">
+                    <div>
+                        <div class="quarry-stat-num">Geologist Founder</div>
+                        <div class="quarry-stat-label">From Quarry to Export</div>
+                    </div>
+                    <div>
+                        <div class="quarry-stat-num">12+</div>
+                        <div class="quarry-stat-label">Export Countries</div>
+                    </div>
+                    <div>
+                        <div class="quarry-stat-num">20+</div>
+                        <div class="quarry-stat-label">Varieties</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quarry-img">
+                <img class="quarry-img-src" src="https://i.ibb.co/rfbLxKJm/5-Quarry-Processing-Operations.jpg"
+                    alt="Quarry-Processing-Operations">
+            </div>
+        </div>
+    </section>
+
+    <section id="inventory" class="section-container inventory-section">
+        <div class="section-inner">
+            <div class="section-eyebrow">Current availability</div>
+            <h2 class="section-h2">What's in stock now</h2>
+            <p style="font-size:14px; color:var(--color-text-light-muted);">Updated fortnightly · Slabs and Blocks ·
+                Request full availability via WhatsApp/email</p>
+
+            <div class="inv-grid">
+                <div class="inv-card">
+                    <div class="inv-img-wrapper">
+                        <img class="inv-img" src="https://i.ibb.co/rfyt52Gg/6-Taj-Mahal-Quartzite.png"
+                            alt="Taj-Mahal-Quartzite">
+                    </div>
+                    <div class="inv-body">
+                        <div class="inv-name">Taj Mahal Quartzite</div>
+                        <div class="inv-spec">260×160cm · 3cm · Polished</div>
+                        <span class="inv-badge">In stock</span>
+                    </div>
+                </div>
+                <div class="inv-card">
+                    <div class="inv-img-wrapper">
+                        <img class="inv-img" src="https://i.ibb.co/ffJ3KsH/7-Crystallo-Quartzite.jpg"
+                            alt="White-Macaubas-Quartzite">
+                    </div>
+                    <div class="inv-body">
+                        <div class="inv-name">Crystallo Quartzite</div>
+                        <div class="inv-spec">240×140cm · 2cm · Honed</div>
+                        <span class="inv-badge">In stock</span>
+                    </div>
+                </div>
+                <div class="inv-card">
+                    <div class="inv-img-wrapper">
+                        <img class="inv-img" src="https://i.ibb.co/QvFn3QH5/8-Exotic-Fusion-AB.png" alt="Grey Dolomite">
+                    </div>
+                    <div class="inv-body">
+                        <div class="inv-name">Exotic Fusion AB</div>
+                        <div class="inv-spec">280×160cm · 3cm · Leather</div>
+                        <span class="inv-badge">In stock</span>
+                    </div>
+                </div>
+                <div class="inv-card">
+                    <div class="inv-img-wrapper">
+                        <img class="inv-img" src="https://i.ibb.co/Z682Ygxb/9-Raw-Blocks-at-Quarry.jpg"
+                            alt="Beige Quartzite">
+                    </div>
+                    <div class="inv-body">
+                        <div class="inv-name">Raw Blocks at Quarry</div>
+                        <div class="inv-spec">Figure Dependent Size · Unpolished</div>
+                        <span class="inv-badge">In stock</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-container">
+        <div class="section-inner">
+            <div class="section-eyebrow">Get in touch</div>
+            <h2 class="section-h2">Start a conversation</h2>
+
+            <div class="contact-grid">
+                <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault();">
+                    <div class="form-row">
+                        <label class="form-label" for="client-name">Your name</label>
+                        <input class="form-input" type="text" id="client-name" placeholder="Full name" required>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label" for="client-company">Company & country</label>
+                        <input class="form-input" type="text" id="client-company"
+                            placeholder="e.g. Stone Imports LLC, USA" required>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label" for="client-msg">What are you looking for?</label>
+                        <textarea class="form-textarea" id="client-msg" placeholder="Stone type, quantity, finish..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Enquiry</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-block">
+                        <div class="contact-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-val">sales@mmstones.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-icon"><i class="ti ti-phone" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="contact-label">Phone / WhatsApp</div>
+                            <div class="contact-val">+91 8897709200</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="contact-label">Quarry & Factory Locations</div>
+                            <div class="contact-val-group">
+                                <div class="contact-val">90/2 NMM, Soblyapura, Uday Nagar,<br>Madhya Pradesh, India. Pin
+                                    Code: 455227</div>
+                                <div class="contact-address-divider"></div>
+                                <div class="contact-val">NS-11, Near Police Station, Ward No. 10, Suket, Rajasthan,<br>India. Pin Code: 326530</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/918897709200" class="wa-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">MM Stones Corporation</div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">CAPEXIL Member Profile</a>
+            </div>
+            <div class="footer-copy">© 2026 · MM Stones Corporation · Rajasthan, India</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
